@@ -13,11 +13,11 @@ public class ConnectionFactory {
 	Connection conn;
 
 	public ConnectionFactory() {
-		this.url = "jdbc:sqlserver://10.2.11.11:1433;";
-		this.dataBaseName = "UGDM";
-		this.dataBaseNameProd = "UGDM_Preparacao";
-		this.user = "digitalizacao";
-		this.password = "digicodat";
+		this.url = "";
+		this.dataBaseName = "";
+		this.dataBaseNameProd = "";
+		this.user = "";
+		this.password = "";
 	}
 
 	public Connection getConnection() {
@@ -37,7 +37,7 @@ public class ConnectionFactory {
 
 	public static void main(String[] args) throws Exception{
 		Connection con = new ConnectionFactory().getConnectionProducao();
-		System.out.println("Conex„o aberta");
+		System.out.println("Conex√£o aberta");
 		con.close();
 	}
 
